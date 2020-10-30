@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: xxx-large;
+}
+.center-panel {
+    position: absolute;
+    margin-top: calc(50vh - 50px);
+    margin-left: calc(50vw - 150px);
+    text-align: center;
+    width: 300px;
+    height: 100px;
+}
+.message {
+    opacity: 0.6;
+}
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) scaleY(0.6)
+    }
+    100% {
+        transform: translateX(-50%) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to bottom, #003e52, #00b4d9);
+}
+.bgTop {
+    z-index: -1;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: -2;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: -3;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    min-width: 1920px;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-image: url('/assets/img/wave-top.png');
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+    animation: move_wave 15s linear infinite;
+}
+.waveMiddle {
+    background-image: url('/assets/img/wave-mid.png');
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 30s linear infinite;
+}
+.waveBottom {
+    background-image: url('/assets/img/wave-bot.png');
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 10s linear infinite;
+}
