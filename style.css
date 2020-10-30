@@ -20,7 +20,7 @@
 }
 .center-panel {
     position: absolute;
-    margin-top: calc(50vh - 50px);
+    margin-top: calc(50vh - 80px);
     margin-left: calc(50vw - 150px);
     text-align: center;
     width: 300px;
