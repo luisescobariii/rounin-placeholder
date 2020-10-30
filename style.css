@@ -79,21 +79,21 @@
     transform-origin: center bottom;
 }
 .waveTop {
-    background-image: url('/assets/img/wave-top.png');
+    background-image: url('./assets/img/wave-top.png');
     background-size: 50% 100px;
 }
 .waveAnimation .waveTop {
     animation: move_wave 15s linear infinite;
 }
 .waveMiddle {
-    background-image: url('/assets/img/wave-mid.png');
+    background-image: url('./assets/img/wave-mid.png');
     background-size: 50% 120px;
 }
 .waveAnimation .waveMiddle {
     animation: move_wave 30s linear infinite;
 }
 .waveBottom {
-    background-image: url('/assets/img/wave-bot.png');
+    background-image: url('./assets/img/wave-bot.png');
     background-size: 50% 100px;
 }
 .waveAnimation .waveBottom {
